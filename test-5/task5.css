@@ -107,11 +107,9 @@ li{
      color:#999;
      border-right: 1px solid #999;
      margin-right: 15px;
-     display: table;
+     white-space: nowrap;
  }
 .box5 {
-    padding-right: 40px;
-    display: inline-block;
     text-align: left;
 }
 
