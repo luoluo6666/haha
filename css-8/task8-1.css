@@ -1,0 +1,333 @@
+body{
+    margin: 0 auto;
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.page-head{
+    height: 22px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tel{
+    font-size: 1rem;
+    color: #29b078;
+}
+.circle{
+    height: 20px;
+    width: 20px;
+    border:1px solid #29b078;
+    border-radius: 50%;
+    margin-right: 10px;
+    float: left;
+    text-align: center;
+}
+.bg-coin2 {
+    width: 18px; height: 18px;
+    background: url('img8/css_sprites.png') -410px -378px;
+    transform: scale(0.75);
+}
+.bg-coin3 {
+    width: 20px; height: 18px;
+    background: url('img8/css_sprites.png') -330px -378px;
+    transform: scale(0.75);
+}
+.bg-wechat {
+    width: 20px; height: 18px;
+    background: url('img8/css_sprites.png') -370px -378px;
+    transform: scale(0.75);
+}
+.navbar{
+    height: 50px;
+    width: 100%;
+    background-color: #29b078;
+}
+.navbar-default{
+    border: none;
+    border-radius: 0;
+}
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: 1rem;
+}
+.navbar-brand {
+    float: right;
+    height: 50px;
+    padding: 15px 17px;
+    line-height: 20px;
+}
+.navbar-brand:hover{
+    border-bottom: 2px solid #ffffff;
+}
+main{
+    margin-top: 72px;
+    background-color: #fafafa;
+   padding-bottom: 40px;
+}
+.carousel-inner {
+    height: 400px;
+}
+.carousel-control{
+    top:40%;
+    height:0;
+}
+.carousel-caption{
+    line-height: 34px;
+    text-indent: 10%;
+    top:30%;
+}
+.introduce1{
+    text-indent: 20%;
+}
+.font1{
+    color: white;
+    font-size: 1.6rem;
+    text-indent: 10%;
+}
+.font2{
+    font-size: 2.2rem;
+    color: white;
+}
+.font3{
+    font-size: 1.8rem;
+    color: white;
+}
+.container-fluid{
+    margin-top: 50px;
+    text-align: center;
+}
+.span3{
+    width: 25%;
+    float: left;
+}
+.imgku{
+    height: 70px;
+    line-height: 70px;
+}
+.bg-rocket {
+     margin: 0 auto;
+     width: 44px; height: 63px;
+     background: url('img8/css_sprites.png') -604px -411px;
+    transform: scale(0.6);
+ }
+.efficient{
+    font-size: 2rem;
+}
+.bg-archive {
+    margin: 0 auto;
+     width: 61px; height: 50px;
+     background: url('img8/css_sprites.png') -604px -266px;
+    transform: scale(0.6);
+ }
+.bg-connection {
+    margin: 0 auto;
+    width: 52px; height: 55px;
+    background: url('img8/css_sprites.png')-604px -336px;
+    transform: scale(0.6);
+}
+.user{
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 6px;
+}
+h2{
+    font-size: 1.5rem;
+   margin-top: 50px;
+}
+.circle1{
+    height: 3rem;
+    width: 3rem;
+    background-color: #fff;
+    border: 1px solid  #e7e6e7;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #29b078;
+    line-height: 3rem;
+    box-shadow: 1px 1px 2px #e7e6e7;
+}
+.bg-arrow {
+    width: 33px; height: 31px;
+    background: url('img8/css_sprites.png') -668px -411px;
+    transform: scale(0.5);
+}
+.step{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 1;
+}
+.step1{
+    font-size: 1rem;
+}
+.imgback{
+    width: 21%;
+    border: 1px solid #e7e6e7;
+    background-color: #fff;
+    text-align: center;
+    margin: 0 2%;
+    box-shadow: 0  1px 1px #adadad;
+}
+.img-rounded {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    transform: scale(0.6);
+}
+.dot{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.dot1{
+    padding: 5px;
+    margin: 10px 1px;
+    border-radius: 50%;
+    background-color:  #29b078 ;
+    border: 1px solid #e7e6e7;
+    float: left;
+}
+.dot2{
+   padding: 5px;
+    margin: 10px 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #e7e6e7;
+    float: left;
+}
+.dot2:hover{
+    background-color: #29b078;
+}
+.student{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.studentform {
+    color: #adadad;
+    text-align: justify;
+}
+.imgcontent{
+     width: 19%;
+    margin-right: 1%;
+     height: 100px;
+     background-color: #fff;
+    float: left;
+ }
+.ali{
+    width: 100%;
+    height: 100px;
+    background: url("img8/alibaba.png") no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.kingsoft{
+    width: 100%;
+    height: 100px;
+    background: url("img8/kingsoft.png") no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.huanxin{
+    width: 100%;
+    height: 100px;
+    background: url("img8/huanxin.png") no-repeat;
+    background-size: 50%;
+    background-position: 50%;
+}
+.ronglian{
+    width: 100%;
+    height: 100px;
+    background: url("img8/ronglian.png") no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+.qiniu{
+    width: 100%;
+    height: 100px;
+    background: url("img8/qiniu.png") no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+
+.imgcontent:hover{
+    box-shadow: 0 0 10px #adadad;
+}
+.link-top{
+    width: 100%;
+    padding-top: 10px;
+    background-color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+.link-content{
+    color: #adadad;
+}
+.link-content li{
+    float: left;
+    margin:0 3% 10px 3%;
+}
+.link-content a{
+    color: #999999;
+    text-decoration: none;
+}
+.link-content a:hover{
+    border-bottom: 1px solid #26a26f;
+}
+footer{
+    width: 100%;
+    background-color: #26a26f;
+}
+.row1{
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-align: left;
+}
+.aboutus{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0 7px 0 0;
+    margin: 7px 7px 0 0;
+    border-right: 2px solid #fff;
+    float: left;
+}
+.website{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-right: 10px;
+    padding-bottom: 10px;
+}
+.row1 a{
+    text-decoration: none;
+}
+.row1 a:hover{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.weixin{
+    line-height: 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    text-align: left;
+}
+.weixinlogo{
+    height: 60px;
+}
+.foot{
+    color: #fff;
+    font-size: 1.2rem;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    text-align: center;
+}
