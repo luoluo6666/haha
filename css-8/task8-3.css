@@ -121,6 +121,7 @@ main{
     border-top: 1px solid #f4f4f4;
     height: 30px;
     line-height: 30px;
+    overflow:hidden;
 }
 .line-left{
     width: 50%;
