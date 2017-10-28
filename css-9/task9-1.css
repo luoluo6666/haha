@@ -11,7 +11,7 @@
         float: right;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 760px) {
     .part1>.font{
         text-align: center;
     }
