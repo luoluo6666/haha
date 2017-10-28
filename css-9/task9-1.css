@@ -6,9 +6,14 @@
         padding-right: 15px;
     }
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
     .navbar-nav {
         float: right;
+    }
+}
+@media (max-width: 768px) {
+    .part1>.font{
+        text-align: center;
     }
 }
 @media (min-width: 768px) {
