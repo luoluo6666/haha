@@ -100,7 +100,6 @@ header{
 .across{
     height: 4px;
     width: 73px;
-    border-radius: 20px;
     background-color: #ff7f02;
     display: inline-block;
 }
