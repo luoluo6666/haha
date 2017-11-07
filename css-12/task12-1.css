@@ -29,7 +29,7 @@ main {
     display: flex;
     align-items: center;
     height: 15rem;
-    background: url("../css-5/img/doctor.png") no-repeat;
+    background: url("../test-5/img/doctor.png") no-repeat;
     background-size: cover; }
     main .main-top .head {
       height: 10rem;
