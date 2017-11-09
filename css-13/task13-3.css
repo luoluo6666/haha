@@ -32,6 +32,7 @@ img {
   height: 2rem; }
 
 main {
+  padding-bottom: 6rem;
   background-color: #f0f0f0;
   overflow: hidden;
   font-size: 2rem;
