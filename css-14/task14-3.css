@@ -11,7 +11,7 @@ main{
 }
 .dirction{
     padding: 15px 0;
-    border-bottom:1px solid #f4f4f4;
+    border-bottom:1px solid #edf1f2;
 
 }
 .dic{
@@ -36,18 +36,18 @@ main{
 }
 .module{
     width: 100%;
-    margin-top: 2rem;
+    margin: 2rem 0;
     background-color: #fff;
-    border: 1px solid #f4f4f4;
+    border: 1px solid #edf1f2;
     box-shadow: 0 0 2px #9f9f9f;
 }
 .headimg{
-    height: 90px;
+    height: 100px;
     margin: 20px 10px;
     float: left;
 }
 .intro{
-    height: 90px;
+    height: 100px;
     margin:20px 10px;
 }
 .title3{
@@ -59,13 +59,13 @@ main{
     text-align: justify;
 }
 .line1{
-    border-top: 1px solid #f4f4f4;
+    border-top: 1px solid #edf1f2;
     height: 30px;
     line-height: 30px;
 }
 .line-left{
     width: 50%;
-    border-right: 1px solid #f4f4f4;
+    border-right: 1px solid #edf1f2;
     font-size: 1.3rem;
     float: left;
 }
@@ -76,7 +76,7 @@ main{
     white-space: nowrap;
 }
 .font1{
-    color: #d0d6d9;
+    color: #a0a0a0;
     margin: 0 10px;
 }
 .module strong{
@@ -86,17 +86,17 @@ main{
     color: black;;
 }
 .line2{
-    color: #d0d6d9;
+    color: #a0a0a0;
     font-size: 1.3rem;
-    border-top: 1px solid #f4f4f4;
+    border-top: 1px solid #edf1f2;
     height: 90px;
 }
 .line2-right{
     width: 30%;
     line-height: 90px;
     text-align: center;
-    border-right: 1px solid #f4f4f4;
-    border-bottom: 1px solid #f4f4f4;
+    border-right: 1px solid #edf1f2;
+    border-bottom: 1px solid #edf1f2;
     float: left;
 }
 .line2-left{
@@ -106,7 +106,7 @@ main{
     line-height: 30px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #edf1f2;
 }
 .line3{
     width: 100%;
@@ -116,11 +116,11 @@ main{
     line-height:30px ;
     float: left;
     padding-left: 10px;
-    border-bottom: 1px solid #f4f4f4;
+    border-bottom: 1px solid #edf1f2;
 }
 .line4{
     font-size: 1.3rem;
-    color: #d0d6d9;
+    color: #a0a0a0;
     line-height:30px ;
     text-align: left;
     padding-left: 10px;
@@ -132,13 +132,14 @@ main{
     padding: 0 20px;
 }
 .hidden-content{
-    width: 92.5%;
     color: #fff;
     text-align: center;
     background-color: #464646;
     position: absolute;
-    top:0;
-    bottom: 0;
+    top: 2rem;
+    left: 15px;
+    right: 15px;
+    bottom: 2rem;
     border-radius: 10px;
     opacity: 0;
     animation: myfirst 2s 2;

@@ -17,19 +17,23 @@ main {
     main .feature .size {
       height: 4rem; }
     main .feature .eff {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600; }
     main .feature .explain {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-top: .1rem;
       color: #999999; }
   main .user {
     border-left: 1px dotted #999999;
     font-size: .8rem;
     color: #29b078; }
+    @media (max-width: 760px) {
+      main .user {
+        border: none; } }
     main .user .font {
+      font-size: 1.2rem;
       padding-bottom: 2rem;
-      margin-left: 2rem;
+      margin-left: 4rem;
       color: #999999; }
   main .learn {
     margin-top: 2rem;
@@ -41,21 +45,23 @@ main {
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: .8rem;
     color: #999999; }
     main .step .step1 {
+      font-size: 1.2rem;
       width: 60%; }
     main .step .number {
-      width: 2rem;
-      height: 2rem;
-      border: 1px solid #999999;
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid #f5f5f5;
       border-radius: 50%;
+      font-size: 1.5rem;
       color: #29b078;
       text-align: center;
-      line-height: 2rem;
+      line-height: 4rem;
       background-color: #fff;
-      box-shadow: 1px 1px 2px #999999; }
+      box-shadow: 0 2px 2px #999999; }
   main .student {
     margin: 1rem 0;
     background-color: #fff;
@@ -68,11 +74,12 @@ main {
       margin: 2rem 0;
       border-radius: 50%; }
     main .student .name {
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-weight: 600; }
     main .student .intro {
-      margin: 2rem 3rem;
-      font-size: .8rem;
+      margin: 2rem 5rem;
+      font-size: 1rem;
+      line-height: 191%;
       color: #999999;
       text-align: justify; }
   main .circle {
@@ -126,7 +133,7 @@ main {
         float: left;
         margin: 10px 6% 10px 0; }
         main .link-content ul li a {
-          font-size: .8rem;
+          font-size: 1rem;
           color: #999999;
           text-decoration: none; }
           main .link-content ul li a:hover {

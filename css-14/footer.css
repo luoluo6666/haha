@@ -2,15 +2,20 @@
 footer {
     background-color: #26a26f; }
 footer .lead {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #fff;
     margin: 10px 0; }
 footer .pos {
     float: right; }
+@media (max-width: 768px) {
+    footer .pos{
+        float: none;
+    }
+}
 footer .kong {
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
 footer a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fff;
     text-decoration: none; }
 footer a:hover {
@@ -18,9 +23,10 @@ footer a:hover {
     color: #fff;
     border-bottom: 1px solid #fff; }
 footer .weixinlogo {
-    height: 7rem; }
+    height: 8rem; }
 footer .foot {
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center; }
+
 

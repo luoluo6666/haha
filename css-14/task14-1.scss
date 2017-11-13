@@ -26,11 +26,11 @@ main{
     height: 4rem;
   }
     .eff{
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 600;
     }
     .explain{
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-top: .1rem;
       color: $gray;
     }
@@ -39,9 +39,13 @@ main{
     border-left: 1px dotted $gray;
     font-size: .8rem;
     color: $green;
+    @media (max-width: 760px) {
+      border: none;
+    }
     .font{
+      font-size: 1.2rem;
       padding-bottom: 2rem;
-      margin-left: 2rem;
+      margin-left: 4rem;
       color: $gray;
   }
   }
@@ -56,22 +60,24 @@ main{
     align-items: center;
     justify-content: space-between;
     height: 4rem;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-size: .8rem;
     color: $gray;
     .step1{
+      font-size: 1.2rem;
       width: 60%;
     }
     .number{
-      width: 2rem;
-      height: 2rem;
-      border: 1px solid $gray;
+      width: 4rem;
+      height: 4rem;
+      border: 1px solid #f5f5f5;
       border-radius: 50%;
+      font-size: 1.5rem;
       color: $green;
       text-align: center;
-      line-height: 2rem;
+      line-height: 4rem;
       background-color: #fff;
-      box-shadow: 1px 1px 2px $gray;
+      box-shadow: 0 2px 2px $gray;
     }
   }
   .student{
@@ -87,13 +93,14 @@ main{
       border-radius: 50%;
     }
     .name{
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-weight: 600;
     }
     .intro{
-      margin: 2rem 3rem;
-      font-size: .8rem;
-      color: $gray;
+      margin: 2rem 5rem;
+      font-size: 1rem;
+      line-height: 191%;
+      color: #999999;
       text-align: justify;
     }
   }
@@ -163,7 +170,7 @@ main{
         float: left;
         margin: 10px 6% 10px 0;
         a {
-          font-size: .8rem;
+          font-size: 1rem;
           color: #999999;
           text-decoration: none;
           &:hover {
