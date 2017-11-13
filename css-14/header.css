@@ -1,0 +1,108 @@
+
+.tel{
+    font-size: 1rem;
+    color: #54c093;
+}
+.icon{
+    float: right;
+}
+.border{
+    height: 1.5rem;
+    margin-left: .5rem;
+    border: .1rem solid #54c093;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+.head{
+    width: 100%;
+    height: 5rem;
+    background: #29b078;
+}
+.logo{
+    display: inline-block;
+}
+.jnshu{
+    height: 3rem;
+    margin-top: 1rem;
+}
+.nav{
+    float: right;
+}
+.nav ul li{
+    list-style: none;
+    text-decoration: none;
+
+}
+.nav li {
+    float: left;
+    line-height: 5rem;
+    list-style: none;
+    margin-right: -3rem;
+    padding: 0 3rem;
+}
+
+.nav a:hover {
+    padding: 1.5rem  0;
+    border-bottom: 3px solid #fff;
+    color: #ffffff;
+    text-decoration: none;
+}
+.dropdown a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.ico{
+    display: none;
+    float: right;
+    z-index: 4;
+    width: 3.5rem;
+    margin-top: 1rem;
+
+}
+.ico:active{
+    background-color: #a6a6a6;
+    border: 1px solid #8b8c8c;
+    border-radius: 10%;
+}
+.string{
+    height: .2rem;
+    width: 3rem;
+    background: #fff;
+    float: right;
+    margin: 4px 0;
+}
+@media (max-width: 780px){
+    .ico{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .dropdown li:hover{
+        border-bottom: 1px solid #fff;
+    }
+}
+ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.down{
+    display:none ;
+    background: #29b078;
+    border-top: 1px solid #fff;
+    text-align: center;
+}
+.dropdown ul li{
+    display: block;
+    padding: 1rem 0;
+}
+@media (min-width: 780px) {
+    .dropdown{
+        display: none;
+    }
+}
