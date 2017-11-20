@@ -2,6 +2,7 @@
 //  * Created by Administrator on 2017/11/16.
 // //  */
 
+var a;
 function start() {
     // 选取随机数
     function GetRandomNum(Min,Max)
@@ -10,7 +11,7 @@ function start() {
         var Rand = Math.random();
         return(Min + Math.round(Rand * Range));
     }
-    // 在0-8里选出三个不同的数
+    // 随机选出三个不重复的数
     for (i=0;i<9;i++){
         var num1 = GetRandomNum(0,8);
         var num2 = GetRandomNum(0,8);
@@ -36,14 +37,13 @@ function start() {
         choose[num2].style.backgroundColor = bg1();
         choose[num3].style.backgroundColor = bg1();
 
-    clearInterval(window.myVar);
-    window.myVar = setInterval(function () { start() }, 1000);
+    a=setTimeout("start()",1000);
 }
 
 function end() {
-    clearInterval(window.myVar);                                                                    //停止变色并重置颜色
-     var choose = document.getElementsByClassName("box");
-    for (var x = 0; x <choose.length; x++) {
+    clearTimeout(a);
+    var choose = document.getElementsByClassName("box");
+    for (var x = 0; x < choose.length; x++) {
         choose[x].style.backgroundColor = "orange";
     }
 }
