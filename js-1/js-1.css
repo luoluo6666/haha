@@ -1,5 +1,7 @@
 body{
-    margin: 0;
+    margin: 0 auto;
+    max-width: 780px;
+    min-width: 320px;
 }
 .box{
     float: left;
@@ -22,9 +24,6 @@ body{
     cursor: pointer;
 }
 .switch:hover{
-
+    color: #fff;
+    background-color: orange;
 }
-.switch:focus{
-     color: #fff;
-     background-color: orange;
- }
