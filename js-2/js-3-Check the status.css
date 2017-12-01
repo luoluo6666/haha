@@ -58,6 +58,7 @@ footer {
     font-size: 2rem;
     width: 80%;
     background: #fbb435;
+    cursor: pointer;
     border: none;
     outline: none; }
 
