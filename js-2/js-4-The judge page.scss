@@ -31,12 +31,13 @@ header{
 main{
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 60rem;
+  margin-bottom: 3rem;
   background: $blue;
   #diary{
     width: 100%;
-    min-height: 50rem;
-    max-height: 200rem;
+    min-height: 30rem;
+    max-height: 1000rem;
   }
   .option{
     position: relative;
@@ -59,7 +60,6 @@ main{
       background: $bggrey;
     }
   }
-
 }
 footer{
   position: fixed;

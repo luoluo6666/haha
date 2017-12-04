@@ -22,12 +22,13 @@ header {
 main {
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 60rem;
+  margin-bottom: 3rem;
   background: #29bde0; }
   main #diary {
     width: 100%;
-    min-height: 50rem;
-    max-height: 200rem; }
+    min-height: 30rem;
+    max-height: 1000rem; }
   main .option {
     position: relative;
     width: 23%;
@@ -46,15 +47,6 @@ main {
       padding: 10% 0;
       line-height: 0;
       background: #83b09a; }
-    main .option .knife {
-      width: 20%;
-      position: absolute;
-      opacity: 0;
-      top: 110%;
-      left: 50%;
-      transform: translateX(-50%); }
-    main .option:hover .knife {
-      opacity: 1; }
 
 footer {
   position: fixed;

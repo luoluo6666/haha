@@ -13,8 +13,7 @@ var identity;
 var i;
 for (i = 0; i < TotalArr.length; i++) {
     identity = '<div class="option">'+ '<div class="people">' + TotalArr[i] +
-        '</div>' +'<div class="number"> ' + (i + 1) + "号" + '</div>'+
-       '</div>' ;
+        '</div>' +'<div class="number"> ' + (i + 1) + "号" + '</div>'+'</div>' ;
 
     container.push(identity);
 
