@@ -43,7 +43,7 @@ num.onclick=function () {
     var Num = document.getElementById("import").value;
     var KillerNum= Math.floor(Num/4);//杀手数量
     var TotalArr = [];
-    var k = [];
+    var k = " ";
     for(var n=0;n<KillerNum;n++){
         TotalArr[n]="杀手"
     }
@@ -51,11 +51,12 @@ num.onclick=function () {
         TotalArr[n]="平民"
     }
     TotalArr.sort(function (){return 0.5 - Math.random() });//数组乱序
+
     for (var i = 0; i < Num; i++) {
         var m = i+1;
-        k[i] = m +"号"+TotalArr[i];
+        k += m +'号'+TotalArr[i]+"<br>";
     }
-    document.getElementById("per").innerHTML = k;    //输出杀手平民分配情况
+    document.getElementById("per").innerHTML = k;//输出杀手平民分配情况
 
     s = JSON.stringify(TotalArr);  //数组转换成字符串
     console.log(TotalArr);

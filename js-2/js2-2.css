@@ -40,9 +40,9 @@ main {
       width: 30%; }
     main .line2 .group {
       width: 70%; }
-      main .line2 .group p {
-        display: block;
-        height: 120px; }
+      main .line2 .group div {
+        height: 150px;
+        overflow: auto; }
     main .line2 img {
       height: 50px;
       vertical-align: middle; }
