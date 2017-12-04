@@ -14,7 +14,7 @@ var i;
 for (i = 0; i < TotalArr.length; i++) {
     identity = '<div class="option">'+ '<div class="people">' + TotalArr[i] +
         '</div>' +'<div class="number"> ' + (i + 1) + "号" + '</div>'+
-        '<img src="../css-7/img7/coin3.png" class="knife"/>'+'</div>' ;
+       '</div>' ;
 
     container.push(identity);
 
