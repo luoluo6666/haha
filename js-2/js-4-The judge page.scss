@@ -58,17 +58,6 @@ main{
       line-height: 0;
       background: $bggrey;
     }
-    .knife{
-      width: 20%;
-      position: absolute;
-      opacity: 0;
-      top: 110%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    &:hover .knife{
-      opacity: 1;
-    }
   }
 
 }
