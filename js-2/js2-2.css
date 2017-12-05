@@ -7,8 +7,7 @@ body {
   margin: auto; }
 
 input {
-  outline: none;
-  border: none; }
+  outline: none; }
 
 header {
   height: 3rem;
@@ -37,9 +36,9 @@ main {
     height: 200px;
     margin-top: .5rem; }
     main .line2 .sum {
-      width: 30%; }
+      width: 40%; }
     main .line2 .group {
-      width: 70%; }
+      width: 60%; }
       main .line2 .group div {
         height: 150px;
         overflow: auto; }
@@ -56,14 +55,14 @@ main {
     main .line3 .number {
       font-size: .8rem;
       color: #fbb435; }
-  main .get {
+  main #go {
     width: 100%;
     height: 3rem;
     margin-top: 1rem;
     font-size: 1.5rem;
     background: #fbb435;
     color: #fff; }
-    main .get:hover {
+    main #go:hover {
       cursor: pointer; }
   main #import {
     width: 2rem;

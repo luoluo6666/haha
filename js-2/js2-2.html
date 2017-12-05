@@ -35,11 +35,11 @@
 <div class="line3"></div>
     <div class="line3">
         <span class="put">请输入玩家数量</span>
-        <input type="text" id="import" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="allot()"/>
+        <input type="text" id="import" onkeyup="value=value.replace(/[^\d]/g,'') " onblur="allot()"/>
         <span class="number">玩家数量为4-18人</span>
     </div>
     <div>
-        <input type="button" name="button" class="get" value="去发牌" onclick="get()" />
+        <input type="button" name="button" value="去发牌" id="go" />
         <div id="mask"></div>
         <div id="login">
             <p class="hint">请输入正确的玩家数量</p>
