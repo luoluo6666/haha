@@ -1,16 +1,13 @@
 /**
  * Created by Administrator on 2017/11/21.
  */
-// var flag=false;
+
 
 // 分出杀手和平民各有多少人
 function allot() {
     var Num = document.getElementById("import").value;
     var b = document.getElementById("killer");
     var c = document.getElementById("people");
-    var mask = document.getElementById("mask");
-    var login = document.getElementById("login");
-    var close_login = document.getElementById("close_login");
 
     if (Num >= 4 && Num <= 18) {
         b.innerHTML = Math.floor(Num / 4);
@@ -18,6 +15,7 @@ function allot() {
         var KillerNum= Math.floor(Num/4);//杀手数量
         var TotalArr = [];
         var k = " ";
+        
                 for(var n=0;n<KillerNum;n++){
                     TotalArr[n]="杀手"
                 }
@@ -39,22 +37,34 @@ function allot() {
 
         document.getElementById('go').onclick=function () {
             location.href = 'js-3-Check the status.html';
+        }
 
-        };
     }
     else {
         b.innerHTML = "";
         c.innerHTML = "";
-        mask.style.display = "block";       //弹出模态框，提示请输入正确的玩家数量
-        login.style.display = "block";
-        close_login.onclick = function () {    //点击确定或取消，模态框隐藏
-            mask.style.display = "none";
-            login.style.display = "none";
-        };
-
     }
 
 }
+document.getElementById('go').onclick=function () {
+    var Num = document.getElementById("import").value;
+    var mask = document.getElementById("mask");
+    var login = document.getElementById("login");
+    var close_login = document.getElementById("close_login");
+
+    if(Num >= 4 && Num <= 18){
+        location.href = 'js-3-Check the status.html';
+    }
+    else {
+    mask.style.display = "block";       //弹出模态框，提示请输入正确的玩家数量
+    login.style.display = "block";
+    close_login.onclick = function () {    //点击确定或取消，模态框隐藏
+        mask.style.display = "none";
+        login.style.display = "none";
+    };
+}
+
+};
 // 随机分配平民杀手
 // var num=document.getElementById("num");
 // num.onclick=function () {
