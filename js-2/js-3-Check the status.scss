@@ -1,6 +1,7 @@
 $blue:#29bde0;
 $pink:#ffedc5;
 $brilyellow:#fbb435;
+$red:#f56b81;
 
 *{
   box-sizing: border-box;
@@ -28,11 +29,12 @@ header{
 main{
   .number{
     position: absolute;
-    top: 55px;
+    top: 60px;
     left: 50%;
-    z-index: 1;
+    z-index: 5;
     transform: translateX(-50%);
     height: 4rem;
+
     width: 4rem;
     border: 0.3rem solid #ffedc5;
     border-radius: 50%;
@@ -41,7 +43,7 @@ main{
     #num{
       font-size: 2rem;
       line-height: 3.5rem;
-      color: $pink;
+      color: $red;
     }
   }
   .square{

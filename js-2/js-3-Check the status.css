@@ -21,9 +21,9 @@ header {
 
 main .number {
   position: absolute;
-  top: 55px;
+  top: 60px;
   left: 50%;
-  z-index: 1;
+  z-index: 5;
   transform: translateX(-50%);
   height: 4rem;
   width: 4rem;
@@ -34,7 +34,7 @@ main .number {
   main .number #num {
     font-size: 2rem;
     line-height: 3.5rem;
-    color: #ffedc5; }
+    color: #f56b81; }
 main .square {
   position: relative;
   width: 80%;
