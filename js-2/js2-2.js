@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/11/21.
  */
-var flag=false;
+// var flag=false;
 
 // 分出杀手和平民各有多少人
 function allot() {
@@ -13,11 +13,36 @@ function allot() {
     var close_login = document.getElementById("close_login");
 
     if (Num >= 4 && Num <= 18) {
-        document.getElementById("killer").innerHTML = Math.floor(Num / 4);
         b.innerHTML = Math.floor(Num / 4);
         c.innerHTML = Num - b.innerHTML;
-        
-    } else {
+        var KillerNum= Math.floor(Num/4);//杀手数量
+        var TotalArr = [];
+        var k = " ";
+                for(var n=0;n<KillerNum;n++){
+                    TotalArr[n]="杀手"
+                }
+                for(n=KillerNum;n<Num;n++){
+                    TotalArr[n]="平民"
+                }
+                TotalArr.sort(function (){return 0.5 - Math.random() });//数组乱序
+
+                for (var i = 0; i < Num; i++) {
+                    var m = i+1;
+                    k += m +'号'+TotalArr[i]+"<br>";
+                }
+                document.getElementById("per").innerHTML = k;//输出杀手平民分配情况
+
+                s = JSON.stringify(TotalArr);  //数组转换成字符串
+                console.log(TotalArr);
+                //存入
+                sessionStorage.TotalArr = s;
+
+        document.getElementById('go').onclick=function () {
+            location.href = 'js-3-Check the status.html';
+
+        };
+    }
+    else {
         b.innerHTML = "";
         c.innerHTML = "";
         mask.style.display = "block";       //弹出模态框，提示请输入正确的玩家数量
@@ -25,49 +50,44 @@ function allot() {
         close_login.onclick = function () {    //点击确定或取消，模态框隐藏
             mask.style.display = "none";
             login.style.display = "none";
-        }
+        };
+
     }
+
 }
 // 随机分配平民杀手
-var num=document.getElementById("num");
-num.onclick=function () {
-    var Num = document.getElementById("import").value;
-    var KillerNum= Math.floor(Num/4);//杀手数量
-    var TotalArr = [];
-    var k = " ";
-    if(Num >= 4 && Num <= 18){
-        for(var n=0;n<KillerNum;n++){
-            TotalArr[n]="杀手"
-        }
-        for(n=KillerNum;n<Num;n++){
-            TotalArr[n]="平民"
-        }
-        TotalArr.sort(function (){return 0.5 - Math.random() });//数组乱序
+// var num=document.getElementById("num");
+// num.onclick=function () {
+//     var Num = document.getElementById("import").value;
+//     var KillerNum= Math.floor(Num/4);//杀手数量
+//     var TotalArr = [];
+//     var k = " ";
+//     if(Num >= 4 && Num <= 18){
+//         for(var n=0;n<KillerNum;n++){
+//             TotalArr[n]="杀手"
+//         }
+//         for(n=KillerNum;n<Num;n++){
+//             TotalArr[n]="平民"
+//         }
+//         TotalArr.sort(function (){return 0.5 - Math.random() });//数组乱序
+//
+//         for (var i = 0; i < Num; i++) {
+//             var m = i+1;
+//             k += m +'号'+TotalArr[i]+"<br>";
+//         }
+//         document.getElementById("per").innerHTML = k;//输出杀手平民分配情况
+//
+//         s = JSON.stringify(TotalArr);  //数组转换成字符串
+//         console.log(TotalArr);
+//         //存入
+//         sessionStorage.TotalArr = s;
+//     }
+//     else {
+//         alert("请输入正确的人数")
+//     }
+//
+//     flag=true;
+// };
 
-        for (var i = 0; i < Num; i++) {
-            var m = i+1;
-            k += m +'号'+TotalArr[i]+"<br>";
-        }
-        document.getElementById("per").innerHTML = k;//输出杀手平民分配情况
-
-        s = JSON.stringify(TotalArr);  //数组转换成字符串
-        console.log(TotalArr);
-        //存入
-        sessionStorage.TotalArr = s;
-    }
-    else {
-        alert("请输入正确的人数")
-    }
-
-    flag=true;
-};
-document.getElementById('go').onclick=function () {
-    if(flag){
-        location.href = 'js-3-Check the status.html';
-    }
-    else {
-        alert("请点击设置")
-    }
-};
 
 
