@@ -4,6 +4,7 @@
 body {
   min-width: 320px;
   max-width: 780px;
+  background: #29bde0;
   margin: auto; }
 
 header {
@@ -22,12 +23,13 @@ header {
 main {
   width: 100%;
   padding-top: 2rem;
-  min-height: 75rem;
+  padding-bottom: 3rem;
   background: #29bde0;
   overflow: hidden; }
   main #diary {
     width: 100%;
-   }
+    min-height: 30rem;
+    max-height: 1000rem; }
   main .option {
     position: relative;
     width: 23%;
@@ -63,7 +65,6 @@ footer {
     background: #fbb435;
     font-size: 2rem;
     color: #fff;
-    border: none;
     outline: none;
     cursor: pointer; }
 
