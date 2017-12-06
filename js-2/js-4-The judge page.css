@@ -23,12 +23,12 @@ main {
   width: 100%;
   padding-top: 2rem;
   padding-bottom: 3rem;
+  min-height: 75rem;
   background: #29bde0;
   overflow: hidden; }
   main #diary {
     width: 100%;
-    min-height: 30rem;
-    max-height: 1000rem; }
+   }
   main .option {
     position: relative;
     width: 23%;
