@@ -57,7 +57,7 @@ footer {
   width: 100%;
   background: #29bde0;
   text-align: center; }
-  footer .start {
+  footer #start {
     width: 80%;
     height: 4rem;
     margin: 1rem 0;
