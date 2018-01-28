@@ -48,6 +48,13 @@ $(document).ready(function () {
     if(Die === "die"){    //保存杀手杀人状态
         $('#kill').css('background-color', '#18758D');
     }
+    if(Last=== "lastSpeak"){
+        $('#lastWords').css('background-color', '#18758D');
+    }
+    if(Discuss === "discuss"){
+        $('#speak').css('background-color', '#18758D');
+    }
+
     $("#kill").click(function () {
         if(Die === "die"){   //如果已经杀过人，就进行下一步，并执行kill方法
             alert('请按步骤来');
@@ -59,32 +66,28 @@ $(document).ready(function () {
         }
     });
 
-    if(Last=== "lastSpeak"){
-        $('#lastWords').css('background-color', '#18758D');
-    }
     $("#lastWords").click(function () {
         if(Die !== "die"){
-            alert("请先杀人")
+            alert("请按步骤来")
         }
         else {
             fsm.kill();    //显示die状态才能进行下一步
-            if (Last === "lastSpeak") {
-                alert("请按步骤来");
-                $('#lastWords').css('background-color', '#18758D');
+            if (Last !== "lastSpeak") {
+                fsm.lastWords();
+
             }
             else {
-                fsm.lastWords();
+                alert("请按步骤来");
             }
         }
     });
 
 
-    if(Discuss === "discuss"){
-        $('#speak').css('background-color', '#18758D');
-    }
+
     $("#speak").click(function () {
+
         if(Die !== "die"){
-            alert("请先杀人")
+            alert("请按步骤点")
         }
         else{
             if ((Discuss === "discuss")) {
@@ -98,7 +101,7 @@ $(document).ready(function () {
     $("#vote").click(function () {
         sessionStorage.removeItem('isKill');
         if(Die !== "die") {
-            alert("请先杀人")
+            alert("请按步骤点")
         }
         else{
             fsm.vote();
@@ -130,6 +133,7 @@ if(dieNum<=2){
     day=Math.ceil((dieNum.length+1)/2);
 }
 $(".day").text("第"+day+"天");
+$(".days").text("第"+day+"天");
 
 
 var dieList = JSON.parse(sessionStorage.getItem("dieList"));
@@ -144,18 +148,13 @@ console.log(kong);
 var block=[];
 var content;
 for (var m = 0; m < kong.length; m++) {
-    content = '<div class="day">' + "第"+(m+1)+"天" + '</div>' +'<div id="list">'+
+    content = (!kong[m][1]?'':'<div class="day">' + "第"+(m+1)+"天"+ '</div>')  +'<div id="list">'+
         '<p> ' + "晚上:" +kong[m][0]+"被杀手杀死" +'</p>'+
         (!kong[m][1]?'':'<p> ' + "白天:" +kong[m][1]+"被全民投票投死" +'</p>' +'</div>');
 
     block.push(content);
 }
 document.getElementById("record").innerHTML=block.join('');
-if(dieList.length%2==0){
-    $("#record").show();
-}else{
-    $("#record").hide();
-}
 
 $(document).ready(function(){
     $(".day").click(function(){

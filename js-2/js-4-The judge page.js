@@ -20,3 +20,8 @@ for (i = 0; i < TotalArr.length; i++) {
 }
 
 document.getElementById("diary").innerHTML=container.join('');
+
+var start=document.getElementById("start");
+start.onclick=function () {
+    location.href="../js-4/js-The judge this.html";
+};
