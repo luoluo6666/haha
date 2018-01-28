@@ -25,6 +25,9 @@ $lightgrey:#f8fafb;
   background-color: $background-color;
 }
 
+*{
+  box-sizing: border-box;
+}
 body{
   min-width: 320px;
   max-width: 780px;
@@ -59,7 +62,8 @@ main{
     @include display(center,space-around);
     border-bottom: 1px solid $gray;
     select{
-      padding: 1rem 5% 1rem 1%;
+      width: 30%;
+      padding: 1rem 1%;
       font-size: 1.6rem;
       color: $darkgrey;
       text-align: center;
