@@ -1,4 +1,4 @@
-$(document).ready(function () { 　　$('body').height($('body')[0].clientHeight); });
+
 angular.module('App',['ui.router','angularFileUpload','ui.bootstrap','oc.lazyLoad'])
     .config(function ($stateProvider,$urlRouterProvider) {
         var _lazyLoad = function (loaded) {
