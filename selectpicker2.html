@@ -33,7 +33,7 @@
     </style>
 </head>
 <body>
-<input type="text" id='picker' onfocus="this.blur()"/>
+<input type="text" id='picker'/>
 
 <div class="box">
     <div class="box-top"></div>
@@ -97,7 +97,8 @@
 
 <script>
     $("#picker").click(function () {
-        $(".box").css('display','block')
+        $(".box").css('display','block');
+         document.activeElement.blur();
     });
 
     var obj_lis = document.getElementById("test").getElementsByTagName("li");
