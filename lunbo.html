@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/Carousel.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style type="text/css">
+        .img{
+            width: 200px;
+            height: 200px;
+            background: url(financial-html/imgs/circle.png) no-repeat;
+            background-size: 100% 100%;
+            text-align: center;
+            font-size: 1rem;
+        }
+        .de{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 3rem;
+            padding-top: 10%;
+        }
+        .year{
+            padding-top: 10%;
+        }
+
+    </style>
+</head>
+<body>
+<div id="carousel">
+    <div class="img">
+        <p class="year">预期年化</p>
+        <p>12.5%</p>
+        <div class="de">
+            <div>
+                <p>起购</p>
+                <p>10000元</p>
+            </div>
+            <div>
+                <p>期限</p>
+                <p>3个月</p>
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <p class="year">预期年化</p>
+        <p>12.5%</p>
+        <div class="de">
+            <div>
+                <p>起购</p>
+                <p>10000元</p>
+            </div>
+            <div>
+                <p>期限</p>
+                <p>3个月</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="img">
+        <p class="year">预期年化</p>
+        <p>12.5%</p>
+        <div class="de">
+            <div>
+                <p>起购</p>
+                <p>10000元</p>
+            </div>
+            <div>
+                <p>期限</p>
+                <p>3个月</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="img">
+        <p class="year">预期年化</p>
+        <p>12.5%</p>
+        <div class="de">
+            <div>
+                <p>起购</p>
+                <p>10000元</p>
+            </div>
+            <div>
+                <p>期限</p>
+                <p>3个月</p>
+            </div>
+        </div>
+
+    </div>
+    <!--<img src="images/1.jpg" data-url="http://www.17sucai.com" alt="">-->
+    <!--<img src="images/2.jpg" data-url="http://www.17sucai.com" alt="">-->
+    <!--<img src="images/3.jpg" data-url="http://www.17sucai.com" alt="">-->
+    <!--<img src="images/1.jpg" data-url="http://www.17sucai.com" alt="">-->
+    <!--<img src="images/2.jpg" data-url="http://www.17sucai.com" alt="">-->
+
+</div>
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#carousel').carousel({curDisplay: 0, autoPlay: false, interval: 3000});
+    });
+</script>
+
+</body>
+</html>
