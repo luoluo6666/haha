@@ -98,7 +98,7 @@
 <script>
     $("#picker").click(function () {
         $(".box").css('display','block');
-       
+        document.activeElement.blur();
     });
 
     var obj_lis = document.getElementById("test").getElementsByTagName("li");
