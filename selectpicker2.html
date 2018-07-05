@@ -5,6 +5,12 @@
     <title>Title</title>
     <link href="https://cdn.bootcss.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        input{
+            width: 50%;
+            height: 100px;
+            display: block;
+            margin: 50px 0;
+        }
         .box{
             width: 100%;
             height: 100vh;
@@ -33,7 +39,15 @@
     </style>
 </head>
 <body>
-<input type="text" id='picker'/>
+<div>
+    <input type="text"/>
+</div>
+<input type="text"/>
+<input type="text"/>
+<input type="text"/> <input type="text"/> <input type="text"/> <input type="text"/> <input type="text"/> <input type="text"/>
+
+
+<input type="text" id='picker' onfocus="this.blur()"/>
 
 <div class="box">
     <div class="box-top"></div>
@@ -92,22 +106,31 @@
 
 </div>
 
+
+
 <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
 
 
 <script>
+    $('input').bind('click',function(e){
+        var $this = $(this);
+        e.preventDefault();
+        setTimeout(function(){
+            $(window).scrollTop($this.offset().top - 10);
+        },200)
+    })
     $("#picker").click(function () {
         $(".box").css('display','block');
         document.activeElement.blur();
     });
 
     var obj_lis = document.getElementById("test").getElementsByTagName("li");
-        for(i=0;i<obj_lis.length;i++){
-            obj_lis[i].onclick = function(){
-                $("#picker").val(this.innerHTML);
-                $(".box").css('display','none')
-            }
+    for(i=0;i<obj_lis.length;i++){
+        obj_lis[i].onclick = function(){
+            $("#picker").val(this.innerHTML);
+            $(".box").css('display','none')
         }
+    }
     $('#cancel').click(function () {
         $(".box").css('display','none');
         $("#picker").val('')
