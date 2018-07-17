@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0">
+  <title>快回收用户登录</title>
+</head>
+<body>
+<!--common_head-->
+<div class="common_head">
+  <ul class="clearfix">
+    <li class="one"><a href="${xyMobileServer }" title="返回"></a></li>
+    <li class="two">
+      <p>登录</p>
+    </li>
+  </ul>
+</div>
+<div class="common_main" style="margin-top: 300px">
+  <div class="login_logo" id="logoimg"><img src="${staticFilePath}mobile/images/login_ban.png" /></div>
+  <div class="login_write">
+    <ul>
+      <li class="person J_Input clearfix">
+
+        <input type="text" id="phone" placeholder="输入您的账号"/>
+        <dl class="history">    <!--历史记录-->
+          <dd class="clearfix">
+            <span class="one"></span>
+            <span class="xian"></span>
+            <span class="des">9081@9223269</span>
+            <span class="cha"></span>
+          </dd>
+          <dd class="clearfix">
+            <span class="one"></span>
+            <span class="xian"></span>
+            <span class="des">9081@9223269</span>
+            <span class="cha"></span>
+          </dd>
+          <dd class="clearfix">
+            <span class="one"></span>
+            <span class="xian"></span>
+            <span class="des">9081@9223269</span>
+            <span class="cha"></span>
+          </dd>
+        </dl>
+        <i class="clear_btn  J_Clear"></i>
+      </li>
+      <li class="password J_Input clearfix">
+        <span class="one"></span>
+        <span class="xian"></span>
+        <input type="password" id="password" placeholder="输入您的密码"/>
+        <span class="eye J_eye"></span>
+        <i class="clear_btn  J_Clear"></i>
+      </li>
+      <li class="pic J_Input clearfix" style="display: none ;" id="imageCode"> <!--输入3次错误，才会出现图片验证码-->
+        <span class="one"></span>
+        <span class="xian"></span>
+        <input type="text" id="code" placeholder="输入图片验证码"/>
+        <span class="picture"><img  id="vcodeimg"  title="看不清换一张" alt="图片验证码"/></span>
+        <i class="clear_btn  J_Clear"></i>
+      </li>
+    </ul>
+    <div class="button"><a href="javascript:void(0)" id="btn_login" data-loading-text="登录中...">立即登录</a></div>
+    <div class="sel_node"><a href="${xyMobileServer}login/codeLogin?callback=${callback}">验证码登录</a></div>
+  </div>
+</div>
+<div class="login_footer clearfix">
+  <span class="one"><a href="${xyMobileServer}reg/toReg?callback=${callback}">前去注册</a><i class="xian"></i></span>
+  <span class="one"><a href="${xyMobileServer}login/goFindPassword?callback=${callback}">忘记密码</a></span>
+</div>
+<!--错误提示弹窗-->
+
+<script>
+  var input = document.querySelector('input');
+  var bodyHeight=document.body.offsetHeight;
+  input.onclick=function (ev) {
+    document.querySelector("body").style.height="9999px";
+    setTimeout(function () {
+      document.body.scrollTop=document.documentElement.scrollTop = input.getBoundingClientRect().top+pageYOffset-5
+    },50);
+    window.addEventListener('touchmove',fn,false)
+  };
+  input.onblur=function (ev) {
+    document.querySelector("body").style.height="auto";
+    document.querySelector("body").removeAttribute("style")
+    window.removeEventListener('touchmove',fn,false)
+  };
+  function fn(ev){
+    var _target = ev.target || ev.srcElement;
+    if(_target.nodeName != 'INPUT') {inp.blur();}
+    ev.preventDefault()
+  }
+
+  //登录
+
+</script>
+</body>
+</html>
